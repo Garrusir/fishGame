@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #dfdfdf;
+	font-family: Tahoma, sans-serif;
+}
+input {
+	outline: none;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+.game-block {
+	margin: 50px auto 0;
+	background-color: #c9c9c9;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0, .14);
+	position: relative;
+	overflow: hidden;
+}
+
+.login-block {
+	padding-top: 10%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.login-title {
+	margin: 16px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.login-block input {
+	width: 30%;
+	height: 40px;
+	font-size: 24px;
+	color: #333;
+	margin: 10px;
+	border: 2px solid #777;
+	border-radius: 10px;
+	padding: 5px 10px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0, .15);
+
+}
+.login-block input:focus {
+	box-shadow: 0 2px 4px 2px rgba(0,0,0, .20);
+}
+
+ .login-block .play-btn {
+
+	text-transform: uppercase;
+	background-color: #942442;
+	color: #f2f2f2;
+	font-weight: bold;
+	cursor: pointer;
+	border-color: #891212;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0, .15);
+	transition: transform .3s ease, background-color .1s ease;
+
+}
+.login-block .play-btn:hover {
+	background-color: #b0123c;
+	border-color: #892121;
+	box-shadow: 0 2px 4px 2px rgba(0,0,0, .20);
+	transform: scale(1.1);
+	color: #f9f9f9;
+
+}
+
+.login-block .play-btn:active {
+	background-color: #7a132f;
+	
+
+}
+
+.login-message {
+	text-transform: uppercase;
+	margin: 10px;
+	font-size: 16px;
+	color: #7a132f;
+	font-weight: bold;
+}
+
+.game {
+	background-image: url('img/bg.png');
+	background-size: cover;
+}
+
+.game div {
+	animation: swim 2s ease infinite;
+}
+.userBar {
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #333;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0, .14);
+	color: #f2f2f2;
+}
+
+.userBar span {
+	margin: 0 10px; 
+}
+
+.fish-0 {
+	width: 80px;
+	height: 60px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.fish-1 {
+	width: 200px;
+	height: 120px;
+	position: absolute;
+	cursor: pointer;
+
+}
+
+.fish-2 {
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	cursor: pointer;
+
+}
+.turned img {
+/*	transform: scale(-1,1);
+*/
+image-orientation: 90deg flip;
+}
+
+.result-screen {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.result-screen h2 {
+	margin-bottom: 20px;
+}
+.winner-item {
+	text-align: center;
+	margin: 10px;
+}
+
+.result-screen .play-btn {
+	padding: 10px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	background-color: #942442;
+	color: #f2f2f2;
+	font-weight: bold;
+	cursor: pointer;
+	border-color: #891212;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0, .15);
+	transition: transform .3s ease, background-color .1s ease;
+
+}
+
+#resultTable {
+	align-self: flex-start;
+}
+
+@keyframes swim {
+	0% {transform: translateY(0);}
+	50% {transform: translateY(10px);}
+	100% {transform: translateY(0);}
+
+}
